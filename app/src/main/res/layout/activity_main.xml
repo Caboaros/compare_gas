@@ -40,8 +40,8 @@
         android:layout_marginTop="56dp"
         android:ems="10"
         android:gravity="center_horizontal"
-        android:inputType="textPersonName"
-        android:text="Preço gasolina ex 5.50"
+        android:hint="Preço gasolina ex 5.50"
+        android:inputType="number"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/price_etanol"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,8 +55,8 @@
         android:layout_height="45dp"
         android:ems="10"
         android:gravity="center_horizontal"
-        android:inputType="textPersonName"
-        android:text="Preço etanol ex 3.70"
+        android:hint="Preço etanol ex 3.70"
+        android:inputType="number"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,24 +65,24 @@
         app:layout_constraintVertical_bias="0.372" />
 
     <Button
-        android:id="@+id/calculate"
+        android:id="@+id/bt_compare"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calcular"
+        android:text="comparar"
+        android:onClick="compare"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/price_etanol" />
 
     <TextView
-        android:id="@+id/result"
+        android:id="@+id/text_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Resultado"
+        android:textColor="@color/purple_200"
         android:textSize="26dp"
         android:textStyle="bold"
-        android:textColor="@color/purple_200"
-        app:layout_constraintBottom_toTopOf="@+id/calculate"
+        app:layout_constraintBottom_toTopOf="@+id/bt_compare"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/price_etanol" />
